@@ -1,5 +1,6 @@
 import UIKit
 
+// refer to: https://github.com/peter-tomaselli/swift-refined
 // Validator enum
 enum OneOf<R1: Refinement, R2: Refinement>: Refinement where R1.RefinedType == R2.RefinedType {
     public typealias RefinedType = R1.RefinedType
